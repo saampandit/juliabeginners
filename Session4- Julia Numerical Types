@@ -1,0 +1,65 @@
+### A Pluto.jl notebook ###
+# v0.19.27
+
+using Markdown
+using InteractiveUtils
+
+# ╔═╡ b9823772-2a4b-11ee-2713-eddc5a59b939
+md"""
+# Julia Numerical Types
+Julia Numerical Types Hierarchy is available at [Julia Numerical Types](https://docs.julialang.org/en/v1/base/numbers/).  Whereas Julia Numerical and Floating Point numbers can be found at [Integer And Floating Point Numbers](https://docs.julialang.org/en/v1/manual/integers-and-floating-point-numbers/)
+
+# What is Abstract Type in Julia for 15 year old kid
+Hey there! Sure, I'd be happy to explain abstract types and why numbers are considered abstract types in Julia in a way that's easy to understand.
+
+Imagine you have a big box of different kinds of toys. Now, instead of talking about specific toys like "Teddy Bear" or "Toy Car," let's talk about categories of toys like "Stuffed Animals" and "Vehicles." These categories are like abstract types in Julia.
+
+In Julia, an abstract type is a general category or idea of something without specifying its exact details. It's like saying "I want a toy car," but you haven't decided on a specific brand or model yet.
+
+Now, let's talk about numbers. Numbers, like 1, 2, 3, and so on, are also abstract types in Julia. This is because we're talking about the general idea of numbers, not specific numbers themselves. It's like saying "Give me any number," without saying "Give me the number 5."
+
+Julia is a language that can work with different types of numbers, such as whole numbers (integers like 1, 2, 3), fractional numbers (like 1.5, 3.25), and even very big or very small numbers. By treating numbers as abstract types, Julia can handle all these different types of numbers in a flexible and efficient way.
+
+So, abstract types are like general categories, and numbers are considered abstract types in Julia because they represent the idea of numbers in general, allowing the language to work with various kinds of numbers without having to be tied to specific values.
+
+# What is Abstract type in Julia for software engineer
+Sure! To explain abstract types in Julia to a software engineer, let's dive a bit deeper into the technical aspect:
+
+In Julia, an abstract type is a type that doesn't have a concrete representation or a specific set of values. Instead, it represents a general concept or category that other types can belong to. It's like a blueprint or a contract that specifies certain characteristics that any concrete type inheriting from it must have.
+
+For example, consider the concept of a "Shape." A shape is an abstract type because it doesn't describe any specific shape like a circle or a square, but rather, it defines common properties that any concrete shape must have, such as calculating area or perimeter.
+
+In Julia, you can create an abstract type using the `abstract` keyword:
+
+```julia
+abstract type Shape end
+```
+
+Now, any concrete shape type, like `Circle` or `Rectangle`, can be defined to inherit from the abstract type `Shape`. This is done using the `<:` symbol, which means "is a subtype of":
+
+```julia
+struct Circle <: Shape
+    radius::Float64
+end
+
+struct Rectangle <: Shape
+    length::Float64
+    width::Float64
+end
+```
+
+By doing this, we're saying that both `Circle` and `Rectangle` are specific types of shapes, and they must implement the functions or behavior defined by the abstract type `Shape`. For example, both `Circle` and `Rectangle` must have a method to calculate their area and perimeter.
+
+Now, let's talk about why numbers are considered abstract types in Julia. In Julia, the concept of numbers is abstract because there isn't just one specific type that represents all numbers. Instead, Julia has different types for different kinds of numbers, such as integers (`Int`), floating-point numbers (`Float64`), rational numbers (`Rational`), and more.
+
+By treating numbers as abstract types, Julia can provide a unified interface for working with numbers in general. This means you can write code that operates on any kind of number without being restricted to a specific type. For example, you can write a function that takes two numbers as input, and it will work with both integers and floating-point numbers seamlessly.
+
+In summary, abstract types in Julia allow you to define general concepts or categories that other types can inherit from, ensuring that those concrete types adhere to certain behaviors. Numbers are considered abstract types in Julia because the language provides multiple concrete number types, and treating them as abstract types allows for more flexible and generic code that can work with different kinds of numbers.
+"""
+
+# ╔═╡ 5d2debbf-2f41-469a-8836-19b9cd65d8c7
+
+
+# ╔═╡ Cell order:
+# ╟─b9823772-2a4b-11ee-2713-eddc5a59b939
+# ╠═5d2debbf-2f41-469a-8836-19b9cd65d8c7
