@@ -4,6 +4,12 @@
 using Markdown
 using InteractiveUtils
 
+# ╔═╡ d9952d00-f92d-41ee-ad4c-1aa385195c7f
+md"""
+One thing we missed in previous session about variables was constant keyword
+const a = 10
+"""
+
 # ╔═╡ b9823772-2a4b-11ee-2713-eddc5a59b939
 md"""
 # Julia Numerical Types
@@ -295,17 +301,17 @@ cbrt(27)
 # ╔═╡ 0a1a8624-c6b6-46f8-8dc3-a8a1336fe093
 
 
-# ╔═╡ ff6de9b8-8364-4f68-b787-a05ae086f79b
-a, b = 3, 4
-
-# ╔═╡ da1d18e2-33b3-4917-9100-fc226d761f07
-x = 3
-
 # ╔═╡ 694becfe-0666-40bc-b0bf-8cced304c210
 # ╠═╡ disabled = true
 #=╠═╡
 x = typemax(Int64)
   ╠═╡ =#
+
+# ╔═╡ da1d18e2-33b3-4917-9100-fc226d761f07
+x = 3
+
+# ╔═╡ ff6de9b8-8364-4f68-b787-a05ae086f79b
+a, b = 3, 4
 
 # ╔═╡ b35413fa-1898-4a5f-8670-1963827cd82f
 begin
@@ -313,6 +319,7 @@ begin
 end
 
 # ╔═╡ Cell order:
+# ╟─d9952d00-f92d-41ee-ad4c-1aa385195c7f
 # ╟─b9823772-2a4b-11ee-2713-eddc5a59b939
 # ╟─5d2debbf-2f41-469a-8836-19b9cd65d8c7
 # ╠═763632f9-8850-4203-a7c6-770ad65a07f7
