@@ -103,6 +103,122 @@ for i in "HelloWorld"
 	@show i
 end
 
+# ╔═╡ ea7ac6e7-aa7e-43aa-8d37-f151851aad9b
+md"""
+## While Loop in Julia
+"""
+
+# ╔═╡ 5288ce21-52e3-4f79-afb1-ef72674fd06b
+md"""
+while expression
+	statement(s)
+end
+"""
+
+# ╔═╡ c053f34b-e30c-44c4-8e7a-f440f20c9065
+n = 10
+
+# ╔═╡ 39c8e0b0-ef35-486f-940e-560220f74433
+while n > 0
+	print(n, " ")
+	n = n - 1
+end
+
+# ╔═╡ 4efc9e47-2001-4c2e-97e0-1f0db6800534
+# ╠═╡ disabled = true
+#=╠═╡
+while true
+	print("> ")
+	line = readline()
+	if line == "done"
+		break
+	end
+	println(line)
+end
+  ╠═╡ =#
+
+# ╔═╡ f0c4f1d2-735f-414d-aa9c-6fad697fc8c6
+i = 1
+
+# ╔═╡ 54aad4a3-4df7-449d-b765-64d0a1f1be82
+while i <= 5
+	@show i
+	i += 1
+end
+
+# ╔═╡ 7efa1a05-71f8-4eb5-a320-b40f77295f6d
+begin
+	# Fibonnaci Series example
+	#n = 15
+
+	a = 0
+	b = 1 
+	itr = 0
+	while itr < 15
+		# Print the fibonnaci value
+		print(a, " ")
+		c = a + b
+		# @show c
+	
+		global a = b
+		# @show a
+		global b = c
+		# @show b
+		
+		global itr += 1
+	end
+end
+
+
+# ╔═╡ 7946d540-ca9c-48f9-9ee1-afae763753e0
+# ╠═╡ disabled = true
+#=╠═╡
+begin
+numm = 6
+fac = 1
+
+	if numm == 0
+		println(1)
+	else
+		while numm >= 1
+			fac = fac * numm
+			numm -= 1
+		end
+		println(fac)
+	end
+end
+  ╠═╡ =#
+
+# ╔═╡ c0d90d78-d815-4ed1-ab0e-6e7f6ef917b0
+# ╠═╡ disabled = true
+#=╠═╡
+# print all the multiples of 3 using continue
+begin
+	num = 1
+	while num < 10
+		num += 1
+		if num % 3 !== 0
+			continue
+		end
+		print(num, " ")
+	end
+end
+  ╠═╡ =#
+
+# ╔═╡ dff54d95-d32a-499e-a6c2-30e9aaeb21b6
+# Print all the square numbers of 1 to 20, but make sure the squared numbers are less than 100
+begin
+	num = 1
+	while num < 20
+		sq_num = num * num
+		if sq_num > 100
+			break
+		end
+		print(sq_num, " ")
+		num += 1
+	end
+end
+
 # ╔═╡ Cell order:
 # ╟─c0b71afe-377e-11ee-06ba-fde64f9769d2
 # ╠═1e96901c-5fdf-42b5-bbc1-40e733b4297e
@@ -121,3 +237,14 @@ end
 # ╠═3dd20eac-8944-4a31-96f4-28e5a02fb0e3
 # ╠═c3bf4d59-f841-4ead-9341-5d0410e70a42
 # ╠═9865af33-3837-4301-9fa2-de637b36161a
+# ╟─ea7ac6e7-aa7e-43aa-8d37-f151851aad9b
+# ╠═5288ce21-52e3-4f79-afb1-ef72674fd06b
+# ╠═c053f34b-e30c-44c4-8e7a-f440f20c9065
+# ╠═39c8e0b0-ef35-486f-940e-560220f74433
+# ╠═4efc9e47-2001-4c2e-97e0-1f0db6800534
+# ╠═f0c4f1d2-735f-414d-aa9c-6fad697fc8c6
+# ╠═54aad4a3-4df7-449d-b765-64d0a1f1be82
+# ╠═7efa1a05-71f8-4eb5-a320-b40f77295f6d
+# ╠═c0d90d78-d815-4ed1-ab0e-6e7f6ef917b0
+# ╠═dff54d95-d32a-499e-a6c2-30e9aaeb21b6
+# ╠═7946d540-ca9c-48f9-9ee1-afae763753e0

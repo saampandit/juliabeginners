@@ -111,6 +111,9 @@ findprev("o", "xylophone", 5)
 # ╔═╡ 0e3f9870-a20d-40ee-94f5-1e9e1724462e
 repeat(".:Z:.", 10)
 
+# ╔═╡ 284e76fc-0e64-4175-b7fe-d5797de881fc
+reverse("HelloWorld")
+
 # ╔═╡ Cell order:
 # ╟─b1a413aa-3774-11ee-35ef-a9730e2f7eb2
 # ╠═70a76c26-4082-4c3f-99ea-5bd384e7ffd5
@@ -142,3 +145,4 @@ repeat(".:Z:.", 10)
 # ╠═d803a458-7e1e-4031-baeb-376cf96726aa
 # ╠═90ca5169-ae39-4e53-a046-65803224f6a7
 # ╠═0e3f9870-a20d-40ee-94f5-1e9e1724462e
+# ╠═284e76fc-0e64-4175-b7fe-d5797de881fc
