@@ -67,6 +67,9 @@ end
 # ╔═╡ 60161c94-eacb-4038-8f49-76e6ec0e4621
 md"""
 ## Compound Expressions
+
+In Julia, a compound expression is a way to combine multiple expressions together into a single expression. Compound expressions are useful when you want to perform multiple operations on a piece of data and then return the result of those operations as a single value.
+A compound expression consists of two or more expressions separated by a comma (,). Each expression in the compound expression is evaluated in turn, and the resulting values are returned as a tuple.
 """
 
 # ╔═╡ 7ff5740d-68b5-40f2-8b7a-e8b4bdf9730a

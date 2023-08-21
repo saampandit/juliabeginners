@@ -189,6 +189,20 @@ fac = 1
 end
   ╠═╡ =#
 
+# ╔═╡ dff54d95-d32a-499e-a6c2-30e9aaeb21b6
+# Print all the square numbers of 1 to 20, but make sure the squared numbers are less than 100
+begin
+	num = 1
+	while num < 20
+		sq_num = num * num
+		if sq_num > 100
+			break
+		end
+		print(sq_num, " ")
+		num += 1
+	end
+end
+
 # ╔═╡ c0d90d78-d815-4ed1-ab0e-6e7f6ef917b0
 # ╠═╡ disabled = true
 #=╠═╡
@@ -204,20 +218,6 @@ begin
 	end
 end
   ╠═╡ =#
-
-# ╔═╡ dff54d95-d32a-499e-a6c2-30e9aaeb21b6
-# Print all the square numbers of 1 to 20, but make sure the squared numbers are less than 100
-begin
-	num = 1
-	while num < 20
-		sq_num = num * num
-		if sq_num > 100
-			break
-		end
-		print(sq_num, " ")
-		num += 1
-	end
-end
 
 # ╔═╡ Cell order:
 # ╟─c0b71afe-377e-11ee-06ba-fde64f9769d2
